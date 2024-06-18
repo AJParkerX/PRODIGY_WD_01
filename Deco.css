@@ -1,0 +1,422 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Modern+Antiqua&family=Rampart+One&family=Rubik+Dirt&family=Trade+Winds&display=swap');
+
+.Logo{
+    width: 120px;
+    position: relative;
+    left: 25px;
+    z-index: 2;
+
+    
+}
+
+
+.background-image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+}
+
+.background-image img {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1; 
+    overflow-y: auto;
+}
+
+
+.background-video{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: 0; 
+}
+
+.background-video video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+body {
+    height: 100%;
+    margin: 0;
+    padding: 0;
+    overflow-y: auto;  
+    overflow-x: hidden;   
+    scroll-behavior: smooth;
+    }
+    
+html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+
+.LogoBox #LogoName{
+    color: rgb(210, 210, 210);
+    font-size: 21px;
+    font-family: Trade Winds;
+    position: relative;
+    left: 20px;
+    top: 10px;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    z-index: 2;
+    
+}
+
+
+
+#LogoName1{
+    color:   rgb(210, 210, 210);
+    font-size: 20px;
+    position: relative;
+    top: 33px;
+    right: 25px;
+    font-family: Trade Winds;
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: rgb(0, 0, 0);
+    z-index: 2;
+
+
+}
+.LogoBox{
+    display: flex;
+}
+
+.Music {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 3;
+}
+
+.Front {
+    z-index: 2;
+    background-color: rgba(5, 5, 39, 0.844);
+    display: flex;
+    position: absolute;
+    top: 50%; 
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    width: 100%; 
+    height: 100%; 
+    border-radius: 20px;
+
+}
+
+.Music #TrueButton{
+    background: linear-gradient(45deg, rgb(8, 8, 135), rgb(132, 11, 132));
+    width: 12%;
+    height: 12%;
+    border-radius: 50px;
+    border: none;
+    font-family: Modern Antiqua;
+    font-weight: bold;
+    font-size: 15px;
+    transition: color 0.3s ease;
+    
+}
+.Music #TrueButton:hover {
+    background: linear-gradient(45deg,rgb(134, 133, 133), rgb(126, 16, 126), rgb(15, 15, 119),rgb(134, 133, 133));
+    
+    color: rgba(255, 255, 255, 0.993);
+    margin-bottom: 4px;
+    padding-bottom: 4px;
+    font-size: 14px;
+    font-family: Modern Antiqua;
+    font-weight: bold;
+    margin-bottom: 15px;
+    border: solid;
+    border-width: 0.5px;
+    border-color :rgb(132, 28, 158);
+    cursor: pointer;
+       
+
+}
+
+.Music.fade-out, .Front.fade-out {
+    opacity: 0; 
+    filter: blur(10px); 
+    transition: opacity 2s, filter 2s;
+  }
+
+
+.NavBar{
+    z-index: 2;
+    word-spacing: 70px; 
+    margin-left: 310px;
+    font-family: sans-serif;
+    
+}
+.NavBox{
+    z-index: 2;
+    background-color: rgba(0, 0, 0, 0.342);
+    position: absolute;
+    top: 2%;
+    left: 30%;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    width: 2000px;
+    border-radius: 30px;
+
+ 
+}
+
+.Anchor{
+    text-decoration: none;
+    color: aliceblue;
+    transition: color 0.3s ease;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+    font-family: Trade Winds;
+}
+
+.NavBut{
+    width: 90px;
+    border-radius: 30px;
+    height: 40px;
+    position: relative;
+    left: 75px;
+    background-color: rgb(88, 5, 165);
+    border: none;
+    color: aliceblue;
+    font-family: Trade Winds;
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+    transition: color 0.3s ease;
+
+}
+
+.Anchor:hover {
+    cursor: pointer;
+    color: rgb(3, 11, 255);
+    -webkit-text-stroke-width: 0.3px;
+    -webkit-text-stroke-color: black;
+    position: relative;
+    bottom: 5px;
+    font-size: 20px;
+}
+
+.NavBut:hover {
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+    font-size: 15px;
+    position: relative;
+    bottom: 5px;
+    background-color: blue;
+    cursor: pointer;
+}
+
+.Wel{
+    z-index: 1;
+    position: absolute;
+    left: 6%;
+    top: 35%;
+
+}
+
+.Wel .Text{
+    color: aliceblue;
+    font-family: Trade Winds;
+    font-size: 0;
+    z-index: 1;
+    transition: font-size 2s;
+
+
+}
+
+.Wel .Grow{
+    font-size: 60px;
+}
+
+
+.First {
+    position: relative; 
+    z-index: 2;
+    height: 215vh;
+    background-color: rgba(23, 24, 50, 0.768);
+    top: 90vh;
+}
+
+
+.Text2{
+    position: absolute;
+    top: 10vh;   
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: antiquewhite;
+    
+}
+
+.Text3{
+    position: absolute;
+    top: 29vh;   
+    left: 50%;
+    transform: translate(-50%,-50%);
+    color: antiquewhite;
+    line-height: 1.5;
+    
+
+}
+
+.Snap{
+    display: block; 
+    margin-left: auto; 
+    margin-right: auto; 
+    position: relative;
+    top: 48vh;
+
+}
+
+.Bottom{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+    color: antiquewhite;
+}
+
+.Foot {
+    background-color: rgba(0, 0, 0, 0.532);
+    position: absolute;
+    top: 96%;
+    width: 100%;
+    text-align: center;
+    padding: 10px 0;
+    height: 60px;
+}
+
+.ClassFoot {
+    color: white;
+}
+
+.ClassFoot p {
+    margin-bottom: 10px; 
+}
+
+.F {
+    display: flex;
+    justify-content: center;
+}
+
+.F h4 {
+    margin: 0 10px;
+}
+
+.F h4 a {
+    text-decoration: none;
+    color: white;
+    transition: color 0.3s ease;
+    margin-bottom: 5px;
+}
+
+.F h4 a:hover {
+    color: blue; 
+}
+
+.no-scroll {
+    overflow: hidden;
+}
+
+.Oldest{
+    position: relative;
+    top: 67vh;
+    width: 450px;
+    left: 25vh;
+}
+
+.Crab{
+    width: 62vh;
+    height: 49vh;
+    position: relative;
+    left: 50vh;
+    top: 67vh;
+}
+
+.OldText{
+    width: 400px; 
+    white-space: normal;
+    word-wrap: break-word;
+    margin: 0 auto;
+    text-align: justify;
+    color: aliceblue;
+    position: relative;
+    top: 70vh;
+    right: 44vh;
+    font-size: 15px;
+}
+.CrabText{
+    width: 400px; 
+    white-space: normal;
+    word-wrap: break-word;
+    margin: 0 auto;
+    text-align: justify;
+    color: aliceblue;
+    position: relative;
+    top: 60vh;
+    left: 43vh;
+    font-size: 15px;
+}
+
+
+
+@media (max-width: 767px) {
+ 
+    .Logo {
+        width: 80px;
+        left: 10px;
+    }
+
+    .NavBox {
+        left: 10%;
+        width: 80%;
+    }
+
+    .NavBar {
+        word-spacing: 20px;
+        margin-left: 10px;
+    }
+
+    
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+   
+    .Logo {
+        width: 100px;
+        left: 20px;
+    }
+
+    .NavBox {
+        left: 20%;
+        width: 60%;
+    }
+
+    .NavBar {
+        word-spacing: 40px;
+        margin-left: 150px;
+    }
+
+    
+}
+
+
