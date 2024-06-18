@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Galaxium Portal - Unveiling the Secrets of Cosmos Beyond </title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="Deco.css">
+    <style>
+    </style>
+</head>
+
+    <body class="no-scroll">
+
+        <div class="background-image">
+            <img src="TheBlac.png" alt="Background-Img">
+            
+            
+        </div>
+        
+
+        <div class="background-video">
+            <video autoplay loop muted>
+                <source src="C:\Users\ajpar\OneDrive\Desktop\InternStuff\Darkverse\Nebula+Loop+~FREE+Motion+HD+4K~+BACKGROUND+-+SCREENSAVER.mp4" type="video/mp4">
+            </video>
+        </div>
+
+    
+
+        <div class="LogoBox">
+            <img class="Logo" src="file:///C:/Users/ajpar/OneDrive/Desktop/InternStuff/Darkverse/GalLogo.png">
+            <p id="LogoName">Galaxium</p>
+            <p id="LogoName1">Portal</p>
+
+            <div class="NavBox">
+            <nav class="NavBar">
+                <a href="" class="Anchor"> Home </a>
+                <a href="" class="Anchor"> Explore </a>
+                <a href="" class="Anchor"> News </a>
+                <a href="" class="Anchor"> Contact </a>
+                <button class="NavBut"> Register </button>
+            </nav>
+            </div>
+            
+        
+        </div>
+
+        <div class="Music">
+            <audio class="TrueMusic">
+                <source src="SpaceRelax.mp3" type="audio/mp3">
+              </audio>
+            <button id="TrueButton">Unveil</button>
+
+        </div>
+
+        <div class="Front">
+        </div>
+
+        <div class="Wel">
+            <h1 class="Text">
+                Welcome.
+            </h1>
+
+        </div>
+
+        <div class="First">
+                <h1 class="Text2">What is Galaxium Portal?</h1>
+                <h3 class="Text3">Galaxium Portal is your gateway to the mysteries and wonders of the universe! At Galaxium Portal, we are dedicated to bringing you the latest and most fascinating information about galaxies, stars, and the cosmos. Whether you're a seasoned astronomer, a student, or simply someone with a passion for space, our website offers a wealth of resources to ignite your curiosity and expand your knowledge.</h3>
+                <img src="C:\Users\ajpar\OneDrive\Desktop\InternStuff\Darkverse\NASASNAPSHOT.png" class="Snap">
+                <h4 class="Bottom">Image courtesy of NASA</h4>
+                <img src="C:\Users\ajpar\OneDrive\Desktop\InternStuff\Darkverse\OldestNasa.png" class="Oldest">
+                <img src="C:\Users\ajpar\OneDrive\Desktop\InternStuff\Darkverse\CrabNebula.png" class="Crab">
+                <h3 class="OldText">Here, you will discover one of the oldest stars known to mankind. This ancient celestial body offers a rare glimpse into the early universe, a beacon of light that has traversed cosmic epochs. </h3>
+                <h3 class="CrabText">Behold, here lies one of the most breathtaking nebulae known to humanity. This cosmic marvel spans vast distances, painting the heavens with ethereal beauty and cosmic dust.</h3>
+                <div class="Foot">
+                    <footer class="ClassFoot">
+                        <p>&copy; 2024 Galaxium Portal. All rights reserved.</p>
+                        <div class="F">
+                            <h4><a href="#">Privacy</a></h4>
+                            <h4><a href="#">Contact</a></h4>
+                            <h4><a href="#">Updates</a></h4>
+                        </div>
+                    </footer>
+                </div>
+
+        </div>
+        
+
+ 
+      
+
+        <script>
+            const playButton = document.getElementById("TrueButton");
+            const playMusic = document.querySelector(".TrueMusic");
+            playButton.addEventListener('click', () => {
+            playMusic.play();
+            document.body.classList.toggle('no-scroll');
+        });
+
+        const musicDiv = document.querySelector('.Music');
+        const frontDiv = document.querySelector('.Front');
+        const button = document.getElementById('TrueButton');
+
+        button.addEventListener('click', () => {
+        musicDiv.classList.add('fade-out');
+        frontDiv.classList.add('fade-out');
+
+
+        setTimeout(() => {
+         musicDiv.classList.remove('fade-out');
+         frontDiv.classList.remove('fade-out');
+         musicDiv.style.display = 'none';
+         frontDiv.style.display = 'none';
+         }, 2000); 
+        });
+
+
+        const welText = document.querySelector(".Text");
+        const welButton = document.getElementById('TrueButton');
+        
+
+        welButton.addEventListener('click', () => {
+            welText.classList.add('Grow');
+        });
+        
+
+        window.onload = function() {
+        setTimeout(function() {
+            window.scrollTo(0, 0);
+        }, 100); 
+    };
+    
+
+    
+        </script>
+
+    </body>
+
+</html> 
